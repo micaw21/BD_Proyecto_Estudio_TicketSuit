@@ -1,6 +1,4 @@
 # Proyecto de Estudio!
-    
-**Estructura del documento principal:**
 
 # PRESENTACIÓN (Cine TicketSuit)
 
@@ -13,10 +11,10 @@
  - Wolkowyski, Micaela
 
 **Profesores**:
-    -
-    -
-    -
-    -
+    - Lic. Vilelgas, Darío O.
+    - Exp. Cuzziol, Juan José
+    - Lic. Vallejos, Walter O.
+    - Lic. Badaracco, Numa
 
 **Carrera:** Licenciatura en Sistemas de Información
 
