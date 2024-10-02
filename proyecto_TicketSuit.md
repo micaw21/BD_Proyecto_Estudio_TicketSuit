@@ -24,7 +24,10 @@
 
 ### Caso de estudio
 
-Maecenas molestie lacus tincidunt, placerat dolor et, ullamcorper erat. Mauris tortor nisl, ultricies ac scelerisque nec, feugiat in nibh. 
+En este proyecto, nos enfocaremos en el diseño de una base de datos para un cine, cubriendo los aspectos esenciales para la gestión de sus operaciones. El cine tiene varias actividades clave como la venta de entradas, la programación de películas, la asignación de salas y el control de la información de los clientes, y todas estas requieren un manejo más organizado.
+
+El objetivo principal del proyecto es desarrollar una base de datos que no solo almacene la información, sino que la gestione de manera eficiente, optimizando el control de las operaciones diarias del cine. La idea es que esta base de datos facilite el acceso a los datos, evite errores y haga que la administración sea mucho más fluida
+
 
 ### Definición o planteamiento del problema
 
