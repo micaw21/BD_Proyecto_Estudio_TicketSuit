@@ -12,5 +12,4 @@ Este repositorio propone exponer la información para presentar el desarrollo de
 		  tema01_script02.sql
 		  tema_nombre.md (descripción completa del procedimiento para implementar el tema técnico de estudio)
 	---->tema_2
-	----> ...
     ->proyecto_TicketSuit.md (documento principal estructurado por capítulos)
