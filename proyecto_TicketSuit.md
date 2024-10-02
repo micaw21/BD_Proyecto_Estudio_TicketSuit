@@ -41,10 +41,11 @@ El cine tiene dificultades para organizar sus operaciones debido a que mucha de 
     - Gestión de distintas funciones para cada película en distintas salas.
 
 ### Límites
-   - No se gestionan calificaciones o reseñas de las películas. (El sistema no incluye funciones de retroalimentación de los usuarios).
-   - No incluye funcionalidades para gestionar quejas, sugerencias o comentarios de clientes.
-   - No se gestionan promociones o descuentos especiales automáticamente. Las tarifas deben ser ingresadas manualmente.
-   - No permite la creación de perfiles de usuario o cuentas personalizadas para clientes.
+    - No se gestionan calificaciones o reseñas de las películas.
+    - No incluye funcionalidades para gestionar quejas, sugerencias o comentarios de clientes.
+    - No se gestionan promociones o descuentos especiales automáticamente. Las tarifas deben ser ingresadas manualmente.
+    - No permite la creación de perfiles de usuario o cuentas personalizadas para clientes.
+    - No incluye la asignación de salas para eventos corporativos o funciones privadas.
 
 ### Objetivo del Trabajo Práctico
 
