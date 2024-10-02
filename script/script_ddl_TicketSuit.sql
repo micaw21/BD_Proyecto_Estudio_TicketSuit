@@ -1,6 +1,3 @@
--- SCRIPT TEMA "TicketSuit"
--- DEFINNICIÃ“N DEL MODELO DE DATOS
-
 CREATE DATABASE Cine;
 
 USE Cine;
@@ -19,6 +16,7 @@ CREATE TABLE Sala
   nombre VARCHAR(200) NOT NULL,
   capacidad INT NOT NULL,
   id_cine INT NOT NULL,
+  estado INT NOT NULL,
   CONSTRAINT PK_sala PRIMARY KEY (id_sala),
   CONSTRAINT FK_sala_cine FOREIGN KEY (id_cine) REFERENCES Cine(id_cine)
 );
@@ -94,6 +92,7 @@ CREATE TABLE Pelicula
   sinopsis VARCHAR (350) NOT NULL,
   imagen VARCHAR (350),
   nacionalidad VARCHAR (100),
+  estado INT NOT NULL,
   CONSTRAINT PK_pelicula PRIMARY KEY (id_pelicula),
   CONSTRAINT FK_pelicula_clasificacion FOREIGN KEY (id_clasificacion) REFERENCES Clasificacion(id_clasificacion),
   CONSTRAINT FK_pelicula_director FOREIGN KEY (id_director) REFERENCES Director(id_director),
@@ -153,3 +152,52 @@ CREATE TABLE Genero_Pelicula
   CONSTRAINT FK_genero_pelicula_pelicula FOREIGN KEY (id_pelicula) REFERENCES Pelicula(id_pelicula),
   CONSTRAINT FK_genero_pelicula_genero FOREIGN KEY (id_genero) REFERENCES Genero(id_genero)
 );
+
+
+-- Cine
+ALTER TABLE Cine
+ADD CONSTRAINT UQ_cine_nombre UNIQUE (nombre);  -- El nombre del cine debe ser único
+
+-- Sala
+ALTER TABLE Sala
+ADD CONSTRAINT CHK_sala_capacidad CHECK (capacidad > 0);  -- La capacidad debe ser mayor que 0
+ALTER TABLE Sala
+ADD CONSTRAINT UQ_sala_nombre_cine UNIQUE (nombre, id_cine);  -- El nombre de la sala debe ser único en un mismo cine
+
+-- Asiento
+ALTER TABLE Asiento
+ADD CONSTRAINT CHK_asiento_numero_columna CHECK (numero_columna > 0);  -- El número de columna debe ser mayor que 0
+ALTER TABLE Asiento
+ADD CONSTRAINT CHK_asiento_letra_fila CHECK (letra_fila BETWEEN 'A' AND 'Z');  -- La letra de la fila debe estar entre A y Z
+
+ALTER TABLE Usuario
+ADD CONSTRAINT CHK_usuario_estado CHECK (estado IN (0, 1));  -- El estado debe ser 0 (inactivo) o 1 (activo)
+
+ALTER TABLE Sala
+ADD CONSTRAINT CHK_sala_estado CHECK (estado IN (0, 1));  -- El estado debe ser 0 (inactivo) o 1 (activo)
+
+ALTER TABLE Pelicula
+ADD CONSTRAINT CHK_pelicula_estado CHECK (estado IN (0, 1));  -- El estado debe ser 0 (inactivo) o 1 (activo)
+
+-- Pelicula
+ALTER TABLE Pelicula
+ADD CONSTRAINT CHK_pelicula_duracion CHECK (duracion > 0);  -- La duración debe ser mayor que 0
+ALTER TABLE Pelicula
+ADD CONSTRAINT UQ_pelicula_nombre UNIQUE (nombre);  -- El nombre de la película debe ser único
+-- No hay restricción directa SQL para URL válida, eso debería manejarse a nivel de aplicación
+
+-- Compra
+ALTER TABLE Compra
+ADD CONSTRAINT CHK_compra_subtotal CHECK (subtotal >= 0);  -- El subtotal no puede ser negativo
+ALTER TABLE Compra
+ADD CONSTRAINT CHK_compra_cantidad CHECK (cantidad > 0);  -- La cantidad debe ser mayor que 0
+
+-- Funcion
+ALTER TABLE Funcion
+ADD CONSTRAINT CHK_funcion_hora CHECK (hora_inicio < hora_final);  -- La hora de inicio debe ser antes que la hora final
+-- La superposición de funciones en la misma sala debería manejarse con un trigger o lógica adicional
+
+-- Ticket
+-- Asegura que el asiento no se duplique en la misma función
+ALTER TABLE Ticket
+ADD CONSTRAINT UQ_ticket_asiento_funcion UNIQUE (id_funcion, id_asiento, id_sala);
