@@ -41,8 +41,13 @@ El cine tiene dificultades para organizar sus operaciones debido a que mucha de 
     - Gestión de distintas funciones para cada película en distintas salas.
 
 ### Límites
+   - No se gestionan calificaciones o reseñas de las películas. (El sistema no incluye funciones de retroalimentación de los usuarios).
+   - No incluye funcionalidades para gestionar quejas, sugerencias o comentarios de clientes.
+   - No se gestionan promociones o descuentos especiales automáticamente. Las tarifas deben ser ingresadas manualmente.
+   - No permite la creación de perfiles de usuario o cuentas personalizadas para clientes.
 
 ### Objetivo del Trabajo Práctico
+
 #### Objetivos Generales
     - Investigar y analizar las necesidades de mejora de eficiencia operativa y experiencia de usuario al usar el sistema del cine.
     - Diseñar una base de datos que permita la gestión eficiente de las operaciones diarias del cine.
