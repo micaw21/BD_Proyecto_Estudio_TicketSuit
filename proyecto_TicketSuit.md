@@ -28,7 +28,7 @@ Maecenas molestie lacus tincidunt, placerat dolor et, ullamcorper erat. Mauris t
 
 ### Definición o planteamiento del problema
 
-Pellentesque interdum aliquam magna sit amet rutrum. Nulla aliquam ligula nec quam iaculis dictum. In cursus aliquam cursus. Nullam a sem vel sapien iaculis finibus. Donec aliquam dictum viverra. Etiam ut orci lacus.
+El cine tiene dificultades para organizar sus operaciones debido a que mucha de la información se maneja de forma manual. Esto provoca errores en la venta de entradas, problemas con la programación de funciones y falta de control en el manejo de los datos de los clientes. Estos inconvenientes afectan la eficiencia operativa del cine y la experiencia de los usuarios.
 
 ## CAPITULO II: MARCO CONCEPTUAL O REFERENCIAL
 
