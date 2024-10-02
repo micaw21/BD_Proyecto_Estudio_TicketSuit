@@ -114,7 +114,7 @@ Donec lobortis tincidunt erat, non egestas mi volutpat in. Cras ante purus, luct
 Maecenas molestie lacus tincidunt, placerat dolor et, ullamcorper erat. Mauris tortor nisl, ultricies ac scelerisque nec, feugiat in nibh. Pellentesque interdum aliquam magna sit amet rutrum. 
 
 ### Diagrama relacional
-![diagrama_relacional](https://github.com/dovillegas/basesdatos_proyecto_estudio/blob/main/doc/image_relational.png)
+![diagrama_relacional](/doc/image_relational.png)
 
 ### Diccionario de datos
 
