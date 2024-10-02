@@ -33,6 +33,18 @@ El objetivo principal del proyecto es desarrollar una base de datos que no solo 
 
 El cine tiene dificultades para organizar sus operaciones debido a que mucha de la información se maneja de forma manual. Esto provoca errores en la venta de entradas, problemas con la programación de funciones y falta de control en el manejo de los datos de los clientes. Estos inconvenientes afectan la eficiencia operativa del cine y la experiencia de los usuarios.
 
+### Objetivo general
+
+Desarrollar una base de datos que mejore la gestión de operaciones del cine TicketSuit, optimizando la venta de entradas, la programación de funciones y el control de datos de clientes.
+
+### Objetivos específicos
+
+ - Diseñar un modelo de datos que represente las diferentes entidades involucradas en las operaciones del cine (películas, funciones, clientes, entradas).
+ - Implementar un sistema de gestión que permita la venta de entradas en línea y en taquilla.   
+ - Facilitar la programación y actualización de funciones de películas mediante una interfaz intuitiva.
+ - Garantizar la integridad y seguridad de los datos de los clientes, asegurando el cumplimiento de normativas de protección de datos.
+
+
 ## CAPITULO II: MARCO CONCEPTUAL O REFERENCIAL
 
 **TEMA 1 " ---- "** 
