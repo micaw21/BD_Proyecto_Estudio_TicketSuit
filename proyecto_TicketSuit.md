@@ -51,6 +51,9 @@ El cine tiene dificultades para organizar sus operaciones debido a que mucha de 
     - Diseñar una base de datos que permita la gestión eficiente de los distintos módulos del sistema de cine.
     - Evaluar la eficacia de la base de datos en la reducción de errores y la mejora de la eficiencia operativa del cine.
     - Aplicar conceptos y técnicas de bases de datos en el sistema ha desarrollar.
+    - Diseñar un modelo de datos que represente las diferentes entidades involucradas en las operaciones del cine (películas, funciones, clientes, entradas).
+    - Implementar un sistema de gestión que permita la venta de entradas en taquilla.
+    - Garantizar la integridad y seguridad de los datos. 
 
 ## CAPITULO II: MARCO CONCEPTUAL O REFERENCIAL
 
