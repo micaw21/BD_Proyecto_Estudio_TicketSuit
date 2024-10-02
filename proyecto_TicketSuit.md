@@ -10,7 +10,7 @@
  - Sosa Ducass, Mateo Ismael
  - Villalba Ruiz Diaz, Renata
  - Velozo, Agustin
- ' Wolkowyski, Micaela
+ - Wolkowyski, Micaela
 
 **Profesores**:
     -
