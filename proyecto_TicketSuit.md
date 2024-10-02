@@ -33,6 +33,25 @@ El objetivo principal del proyecto es desarrollar una base de datos que no solo 
 
 El cine tiene dificultades para organizar sus operaciones debido a que mucha de la información se maneja de forma manual. Esto provoca errores en la venta de entradas, problemas con la programación de funciones y falta de control en el manejo de los datos de los clientes. Estos inconvenientes afectan la eficiencia operativa del cine y la experiencia de los usuarios.
 
+### Alcance 
+    - Gestión de la venta de entradas: registro de ventas, asignación de asientos, y control de disponibilidad.
+    - Programación de películas: gestión de horarios, salas, y fechas de estreno.
+    - Asignación de salas: gestión de la capacidad y disponibilidad de las salas.
+    - Gestión de distintas funciones para cada película en distintas salas.
+
+### Límites
+
+### Objetivo del Trabajo Práctico
+#### Objetivos Generales
+    - Investigar y analizar las necesidades de mejora de eficiencia operativa y experiencia de usuario al usar el sistema del cine.
+    - Diseñar una base de datos que permita la gestión eficiente de las operaciones diarias del cine.
+    - Identificar y desarrollar soluciones para los problemas de gestión del cine, utilizando herramientas y técnicas de bases de datos.
+
+#### Objetivos Específicos
+    - Diseñar una base de datos que permita la gestión eficiente de los distintos módulos del sistema de cine.
+    - Evaluar la eficacia de la base de datos en la reducción de errores y la mejora de la eficiencia operativa del cine.
+    - Aplicar conceptos y técnicas de bases de datos en el sistema ha desarrollar.
+
 ## CAPITULO II: MARCO CONCEPTUAL O REFERENCIAL
 
 **TEMA 1 " ---- "** 
