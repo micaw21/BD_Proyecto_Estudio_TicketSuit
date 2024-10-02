@@ -11,10 +11,11 @@
  - Wolkowyski, Micaela
 
 **Profesores**:
-    - Lic. Vilelgas, Darío O.
-    - Exp. Cuzziol, Juan José
-    - Lic. Vallejos, Walter O.
-    - Lic. Badaracco, Numa
+
+- Lic. Vilelgas, Darío O.
+- Exp. Cuzziol, Juan José
+- Lic. Vallejos, Walter O.
+- Lic. Badaracco, Numa
 
 **Carrera:** Licenciatura en Sistemas de Información
 
