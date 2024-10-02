@@ -1,6 +1,6 @@
-CREATE DATABASE Cine;
+CREATE DATABASE TicketSuit;
 
-USE Cine;
+USE TicketSuit;
 
 CREATE TABLE Cine
 (
@@ -156,17 +156,17 @@ CREATE TABLE Genero_Pelicula
 
 -- Cine
 ALTER TABLE Cine
-ADD CONSTRAINT UQ_cine_nombre UNIQUE (nombre);  -- El nombre del cine debe ser 鷑ico
+ADD CONSTRAINT UQ_cine_nombre UNIQUE (nombre);  -- El nombre del cine debe ser 煤nico
 
 -- Sala
 ALTER TABLE Sala
 ADD CONSTRAINT CHK_sala_capacidad CHECK (capacidad > 0);  -- La capacidad debe ser mayor que 0
 ALTER TABLE Sala
-ADD CONSTRAINT UQ_sala_nombre_cine UNIQUE (nombre, id_cine);  -- El nombre de la sala debe ser 鷑ico en un mismo cine
+ADD CONSTRAINT UQ_sala_nombre_cine UNIQUE (nombre, id_cine);  -- El nombre de la sala debe ser 煤nico en un mismo cine
 
 -- Asiento
 ALTER TABLE Asiento
-ADD CONSTRAINT CHK_asiento_numero_columna CHECK (numero_columna > 0);  -- El n鷐ero de columna debe ser mayor que 0
+ADD CONSTRAINT CHK_asiento_numero_columna CHECK (numero_columna > 0);  -- El n煤mero de columna debe ser mayor que 0
 ALTER TABLE Asiento
 ADD CONSTRAINT CHK_asiento_letra_fila CHECK (letra_fila BETWEEN 'A' AND 'Z');  -- La letra de la fila debe estar entre A y Z
 
@@ -181,10 +181,10 @@ ADD CONSTRAINT CHK_pelicula_estado CHECK (estado IN (0, 1));  -- El estado debe 
 
 -- Pelicula
 ALTER TABLE Pelicula
-ADD CONSTRAINT CHK_pelicula_duracion CHECK (duracion > 0);  -- La duraci髇 debe ser mayor que 0
+ADD CONSTRAINT CHK_pelicula_duracion CHECK (duracion > 0);  -- La duraci贸n debe ser mayor que 0
 ALTER TABLE Pelicula
-ADD CONSTRAINT UQ_pelicula_nombre UNIQUE (nombre);  -- El nombre de la pel韈ula debe ser 鷑ico
--- No hay restricci髇 directa SQL para URL v醠ida, eso deber韆 manejarse a nivel de aplicaci髇
+ADD CONSTRAINT UQ_pelicula_nombre UNIQUE (nombre);  -- El nombre de la pel铆cula debe ser 煤nico
+-- No hay restricci贸n directa SQL para URL v谩lida, eso deber铆a manejarse a nivel de aplicaci贸n
 
 -- Compra
 ALTER TABLE Compra
@@ -195,9 +195,9 @@ ADD CONSTRAINT CHK_compra_cantidad CHECK (cantidad > 0);  -- La cantidad debe se
 -- Funcion
 ALTER TABLE Funcion
 ADD CONSTRAINT CHK_funcion_hora CHECK (hora_inicio < hora_final);  -- La hora de inicio debe ser antes que la hora final
--- La superposici髇 de funciones en la misma sala deber韆 manejarse con un trigger o l骻ica adicional
+-- La superposici贸n de funciones en la misma sala deber铆a manejarse con un trigger o l贸gica adicional
 
 -- Ticket
--- Asegura que el asiento no se duplique en la misma funci髇
+-- Asegura que el asiento no se duplique en la misma funci贸n
 ALTER TABLE Ticket
 ADD CONSTRAINT UQ_ticket_asiento_funcion UNIQUE (id_funcion, id_asiento, id_sala);
