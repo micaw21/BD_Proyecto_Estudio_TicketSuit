@@ -1,6 +1,3 @@
--- SCRIPT "TicketSuit"
--- INSERCI脫N DEL LOTE DE DATOS
-
 USE Cine;
 
 INSERT INTO Cine (id_cine, nombre, direccion) VALUES
@@ -35,6 +32,7 @@ INSERT INTO Genero (id_genero, descripcion) VALUES
 (9, 'Psicologo'),
 (10,'Comedia');
 
+
 INSERT INTO Director (id_director, nombre) VALUES
 (1, 'John Lasseter'),
 (2, 'Jon Watts'),
@@ -47,17 +45,17 @@ INSERT INTO Director (id_director, nombre) VALUES
 (9, 'Christopher Nolan'),
 (10, 'Ridley Scott');
 
-INSERT INTO Pelicula (id_pelicula, nombre, duracion, id_clasificacion, id_director, sinopsis, nacionalidad) VALUES
-(1, 'El viaje de Chihiro', 125, 1, 5, 'Una ni帽a que se aventura en un mundo m谩gico mientras busca una forma de salvar a sus padres.', 'Jap贸n'),
-(2, 'Los Vengadores', 143, 2, 2, 'Un grupo de superh茅roes se une para enfrentar una amenaza global.', 'EE.UU.'),
-(3, 'Titanic', 195, 3, 3, 'Una historia de amor que surge en medio del desastre del Titanic.', 'EE.UU.'),
-(4, 'El Padrino', 175, 4, 4, 'La saga de una familia mafiosa liderada por Vito Corleone.', 'EE.UU.'),
-(5, 'Interestelar', 169, 2, 5, 'Un grupo de astronautas busca un nuevo hogar para la humanidad en el espacio.', 'EE.UU.'),
-(6, 'Parasite', 132, 3, 6, 'Una familia pobre se infiltra en la vida de una familia rica, con consecuencias inesperadas.', 'Corea del Sur'),
-(7, 'La La Land', 128, 2, 7, 'Dos artistas en Los 脕ngeles luchan por lograr sus sue帽os mientras enfrentan desaf铆os en su relaci贸n.', 'EE.UU.'),
-(8, 'Coco', 105, 1, 8, 'Un ni帽o viaja al mundo de los muertos para descubrir la verdad sobre su familia.', 'M茅xico'),
-(9, 'El Origen', 148, 4, 9, 'Un ladr贸n con la capacidad de entrar en los sue帽os de las personas intenta realizar el trabajo definitivo.', 'EE.UU.'),
-(10, 'Gladiador', 155, 4, 10, 'Un general romano se convierte en gladiador para vengar la muerte de su familia.', 'EE.UU.');
+INSERT INTO Pelicula (id_pelicula, nombre, duracion, id_clasificacion, id_director, sinopsis, nacionalidad, estado) VALUES
+(1, 'El viaje de Chihiro', 125, 1, 5, 'Una ni馻 que se aventura en un mundo m醙ico mientras busca una forma de salvar a sus padres.', 'Jap髇', 1),
+(2, 'Los Vengadores', 143, 2, 2, 'Un grupo de superh閞oes se une para enfrentar una amenaza global.', 'EE.UU.', 1),
+(3, 'Titanic', 195, 3, 3, 'Una historia de amor que surge en medio del desastre del Titanic.', 'EE.UU.', 1),
+(4, 'El Padrino', 175, 4, 4, 'La saga de una familia mafiosa liderada por Vito Corleone.', 'EE.UU.', 1),
+(5, 'Interestelar', 169, 2, 5, 'Un grupo de astronautas busca un nuevo hogar para la humanidad en el espacio.', 'EE.UU.', 1),
+(6, 'Parasite', 132, 3, 6, 'Una familia pobre se infiltra en la vida de una familia rica, con consecuencias inesperadas.', 'Corea del Sur', 1),
+(7, 'La La Land', 128, 2, 7, 'Dos artistas en Los 羘geles luchan por lograr sus sue駉s mientras enfrentan desaf韔s en su relaci髇.', 'EE.UU.', 1),
+(8, 'Coco', 105, 1, 8, 'Un ni駉 viaja al mundo de los muertos para descubrir la verdad sobre su familia.', 'M閤ico', 1),
+(9, 'El Origen', 148, 4, 9, 'Un ladr髇 con la capacidad de entrar en los sue駉s de las personas intenta realizar el trabajo definitivo.', 'EE.UU.', 1),
+(10, 'Gladiador', 155, 4, 10, 'Un general romano se convierte en gladiador para vengar la muerte de su familia.', 'EE.UU.', 1);
 
 INSERT INTO Genero_Pelicula (id_pelicula, id_genero) VALUES
 (1, 1),
@@ -76,9 +74,9 @@ INSERT INTO TipoFuncion (id_tipoFuncion, descripcion, precio) VALUES
 (1, '2D', 2500),
 (2, '3D', 3500)
 
-INSERT INTO Sala (id_sala, nombre, capacidad, id_cine) VALUES
-(1, 'SALA 1', 56, 1),
-(2, 'SALA 2', 56, 1)
+INSERT INTO Sala (id_sala, nombre, capacidad, id_cine, estado) VALUES
+(1, 'SALA 1', 56, 1, 1),
+(2, 'SALA 2', 56, 1, 1);
 
 INSERT INTO Asiento (id_asiento, letra_fila, numero_columna, id_sala) VALUES
 (1, 'A', 1, 1), (2, 'A', 2, 1), (3, 'A', 3, 1), (4, 'A', 4, 1), (5, 'A', 5, 1), (6, 'A', 6, 1), (7, 'A', 7, 1), (8, 'A', 8, 1),
@@ -99,16 +97,16 @@ INSERT INTO Asiento (id_asiento, letra_fila, numero_columna, id_sala) VALUES
 (49, 'G', 1, 2), (50, 'G', 2, 2), (51, 'G', 3, 2), (52, 'G', 4, 2), (53, 'G', 5, 2), (54, 'G', 6, 2), (55, 'G', 7, 2), (56, 'G', 8, 2);
 
 INSERT INTO Funcion (id_funcion, hora_inicio, hora_final, fecha, id_pelicula, id_tipoFuncion) VALUES
-(1, '10:00', '12:00', '2024-10-01', 1, 1),  -- Funci贸n de "El viaje de Chihiro"
-(2, '14:00', '16:30', '2024-10-01', 2, 1),  -- Funci贸n de "Los Vengadores"
-(3, '16:45', '19:30', '2024-10-01', 3, 2),  -- Funci贸n de "Titanic"
-(4, '19:45', '22:00', '2024-10-01', 4, 1),  -- Funci贸n de "El Padrino"
-(5, '12:00', '14:30', '2024-10-02', 5, 2),  -- Funci贸n de "Interestelar"
-(6, '15:00', '17:30', '2024-10-02', 6, 1),  -- Funci贸n de "Parasite"
-(7, '18:00', '20:00', '2024-10-02', 7, 2),  -- Funci贸n de "La La Land"
-(8, '20:30', '22:15', '2024-10-02', 8, 1),  -- Funci贸n de "Coco"
-(9, '11:00', '13:30', '2024-10-03', 9, 2),  -- Funci贸n de "El Origen"
-(10, '14:00', '16:30', '2024-10-03', 10, 1); -- Funci贸n de "Gladiador"
+(1, '10:00', '12:00', '2024-10-01', 1, 1),  -- Funci髇 de "El viaje de Chihiro"
+(2, '14:00', '16:30', '2024-10-01', 2, 1),  -- Funci髇 de "Los Vengadores"
+(3, '16:45', '19:30', '2024-10-01', 3, 2),  -- Funci髇 de "Titanic"
+(4, '19:45', '22:00', '2024-10-01', 4, 1),  -- Funci髇 de "El Padrino"
+(5, '12:00', '14:30', '2024-10-02', 5, 2),  -- Funci髇 de "Interestelar"
+(6, '15:00', '17:30', '2024-10-02', 6, 1),  -- Funci髇 de "Parasite"
+(7, '18:00', '20:00', '2024-10-02', 7, 2),  -- Funci髇 de "La La Land"
+(8, '20:30', '22:15', '2024-10-02', 8, 1),  -- Funci髇 de "Coco"
+(9, '11:00', '13:30', '2024-10-03', 9, 2),  -- Funci髇 de "El Origen"
+(10, '14:00', '16:30', '2024-10-03', 10, 1); -- Funci髇 de "Gladiador"
 
 INSERT INTO Sala_Funcion (id_funcion, id_sala) VALUES
 (1, 1),
@@ -216,8 +214,8 @@ INSERT INTO Ticket (id_ticket, id_funcion, id_sala, id_asiento, id_compra) VALUE
 (39, 7, 2, 21, 19),
 (40, 8, 1, 6, 20),
 (41, 9, 2, 8, 21),
-(42, 10, 1, 10, 22),
-(43, 10, 1, 14, 22),
+(42, 10, 1, 14, 22),
+(43, 10, 1, 16, 22),
 (44, 4, 2, 5, 23),
 (45, 5, 1, 25, 24),
 (46, 6, 1, 11, 25),
@@ -231,8 +229,8 @@ INSERT INTO Ticket (id_ticket, id_funcion, id_sala, id_asiento, id_compra) VALUE
 (54, 5, 1, 19, 31),
 (55, 6, 1, 24, 32),
 (56, 6, 1, 26, 32),
-(57, 7, 2, 3, 33),
-(58, 7, 2, 4, 33),
+(57, 7, 2, 23, 33),
+(58, 7, 2, 24, 33),
 (59, 8, 1, 8, 34),
 (60, 8, 1, 14, 34),
 (61, 9, 2, 12, 35),
@@ -243,15 +241,15 @@ INSERT INTO Ticket (id_ticket, id_funcion, id_sala, id_asiento, id_compra) VALUE
 (66, 4, 2, 1, 37),
 (67, 5, 1, 11, 38),
 (68, 6, 1, 13, 39),
-(69, 7, 2, 17, 40),
+(69, 7, 2, 25, 40),
 (70, 8, 1, 21, 41),
 (71, 9, 2, 23, 42),
 (72, 10, 1, 27, 43),
 (73, 10, 1, 29, 43),
-(74, 4, 2, 8, 44),
+(74, 4, 2, 6, 44),
 (75, 5, 1, 30, 45),
 (76, 6, 1, 15, 46),
-(77, 7, 2, 25, 47),
+(77, 7, 2, 26, 47),
 (78, 8, 1, 3, 48),
 (79, 9, 2, 14, 49),
 (80, 10, 1, 11, 50);
