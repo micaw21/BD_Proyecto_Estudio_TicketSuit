@@ -122,8 +122,6 @@ Al terminar la parte teórica, comenzamos con el desarrollo de los scripts en el
  - ChatGPT
  - Copilot
  - SQL Server Management Studio (SSMS)
- 
-
 
 ## CAPÍTULO IV: DESARROLLO DEL TEMA / PRESENTACIÓN DE RESULTADOS 
 
@@ -137,7 +135,7 @@ Acceso al documento [PDF](doc/diccionario_datos.pdf) del diccionario de datos.
 
 ### Desarrollo TEMA 1
 
-> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_1](script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd)
+> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd](script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd)
 
 ### Desarrollo TEMA 2
 
