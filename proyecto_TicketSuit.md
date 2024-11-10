@@ -101,11 +101,22 @@ El cine tiene dificultades para organizar sus operaciones debido a que mucha de 
 
 ### **TEMA 1** 
 
+> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_1](script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd)
+
 ### **TEMA 2** 
+
+> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_2](script/tema02_procedimientos_y_funciones_almacenadas)
+
 
 ### **TEMA 3**
 
+> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_3](script/tema03_optimización_de_consultas_mediante_índices)
+
+
 ### **TEMA 4**
+
+> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_4](script/tema04_manejo_de_tipos_de_datos_JSON)
+
 
 ## CAPÍTULO III: METODOLOGÍA SEGUIDA 
 
@@ -135,21 +146,21 @@ Acceso al documento [PDF](doc/diccionario_datos.pdf) del diccionario de datos.
 
 ### Desarrollo TEMA 1
 
-> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd](script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd)
+> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_1](script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd)
 
 ### Desarrollo TEMA 2
 
-> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_2](script/tema02_nombre_tema)
+> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_2](script/tema02_procedimientos_y_funciones_almacenadas)
 
 
 ### Desarrollo TEMA 3
 
-> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_2](script/tema02_nombre_tema)
+> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_3](script/tema03_optimización_de_consultas_mediante_índices)
 
 
 ### Desarrollo TEMA 4
 
-> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_2](script/tema02_nombre_tema)
+> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_4](script/tema04_manejo_de_tipos_de_datos_JSON)
 
 
 ## CAPÍTULO V: CONCLUSIONES
