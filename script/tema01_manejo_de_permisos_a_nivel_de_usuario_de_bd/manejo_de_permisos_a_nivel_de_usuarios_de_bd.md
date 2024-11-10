@@ -42,9 +42,13 @@ Tareas:
 - Darle permiso a uno de los usuarios sobre el rol creado anteriormente.
 - Verificar el comportamiento de ambos usuarios (el que tiene permiso sobre el rol y el que no tiene), cuando intentan leer el contenido de la tabla
 - Expresar sus conclusiones
+
+  
 Cree dos usuarios, un Usuario1 que posee el rol creado "LecturaPelicula", y otro usuario Usuario2, que no posee dicho rol.
 Al iniciar sesion en Usuario1 e intentar, con un SELECT, visualizar los datos de la tabla Pelicula, si me permite hacerlo, en cambio si inicio sesión con el Usuario2
 e intento leer la tabla película, aparece un mensaje de error ya que dicho usuario no posee el permiso para esa visualización.
+
+
   ![rol_lectura_asignado](/script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd/tema01_img/rol_lectura.png)
 
 
