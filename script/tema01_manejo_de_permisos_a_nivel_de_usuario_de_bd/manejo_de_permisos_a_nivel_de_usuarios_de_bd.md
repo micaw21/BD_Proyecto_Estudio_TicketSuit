@@ -1,6 +1,4 @@
 # Tema 1: Manejo de Permisos a Nivel de Usuarios de Bases de Datos
-
-## Manejo de Permsisos a Nivel de Usuario de Base de Datos
 Los permisos en el motor de base de datos se administran a nivel de base de datos a través de usuarios de base de datos y roles de base de datos.
 
 ### Usuarios de Bases de Datos
@@ -26,7 +24,7 @@ Las entidades de seguridad se pueden crear y administrar mediante la lista Trans
 Tareas: 
 1. Verificar que la base de datos esté configurada en modo mixto (autenticación integrada con windows y por usuario de base de datos).
 
-![configuracion_sql_modo_mixto](script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd/tema01_img/modo_mixto.png) 
+![configuracion_sql_modo_mixto](/script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd/tema01_img/modo_mixto.png) 
 
 2. Manejo de permisos a nivel de roles y de usuarios. Implementar un caso práctico para cada uno.
 
