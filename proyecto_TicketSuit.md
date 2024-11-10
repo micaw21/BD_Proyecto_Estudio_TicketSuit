@@ -6,7 +6,6 @@
 
 **Integrantes**:
  - Sosa Ducass, Mateo Ismael
- - Villalba Ruiz Diaz, Renata
  - Velozo, Agustin
  - Wolkowyski, Micaela
 
@@ -23,27 +22,38 @@
 
 # Índice
 
-  * [Capítulo I: Introducción](#capítulo-i-introducción)
-    * [Caso de estudio](#caso-de-estudio)
-    * [Definición o planteamiento del problema](#definición-o-planteamiento-del-problema)
-    * [Alcance](#alcance)
-    * [Límites](#límites)
-    * [Objetivo del Trabajo Práctico](#objetivo-del-trabajo-práctico)
-      * [Objetivos Generales](#objetivos-generales)
-      * [Objetivos Específicos](#objetivos-específicos)
-  * [Capítulo II: Marco Conceptual o Referencial](#capitulo-ii-marco-conceptual-o-referencial)
-    * [Tema 1 "----"](#tema-1)
-    * [Tema 2 "-----"](#tema-2)
-  * [Capítulo III: Metodología Seguida](#capítulo-iii-metodología-seguida)
-    * [Cómo se realizó el Trabajo Práctico](#a-cómo-se-realizó-el-trabajo-práctico)
-    * [Herramientas (Instrumentos y procedimientos)](#b-herramientas-instrumentos-y-procedimientos)
-  * [Capítulo IV: Desarrollo del Tema / Presentación de Resultados](#capítulo-iv-desarrollo-del-tema--presentación-de-resultados)
-    * [Diagrama relacional](#diagrama-relacional)
-    * [Diccionario de datos](#diccionario-de-datos)
-    * [Desarrollo TEMA 1 "----"](#desarrollo-tema-1)
-    * [Desarrollo TEMA 2 "----"](#desarrollo-tema-2)
-  * [Capítulo V: Conclusiones](#capítulo-v-conclusiones)
-  * [Bibliografía de Consulta](#bibliografía-de-consulta)
+- [Proyecto de Estudio!](#proyecto-de-estudio)
+- [PRESENTACIÓN (Cine TicketSuit)](#presentación-cine-ticketsuit)
+- [Índice](#índice)
+  - [CAPÍTULO I: INTRODUCCIÓN](#capítulo-i-introducción)
+    - [Caso de estudio](#caso-de-estudio)
+    - [Definición o planteamiento del problema](#definición-o-planteamiento-del-problema)
+    - [Alcance](#alcance)
+    - [Límites](#límites)
+    - [Objetivo del Trabajo Práctico](#objetivo-del-trabajo-práctico)
+      - [Objetivos Generales](#objetivos-generales)
+      - [Objetivos Específicos](#objetivos-específicos)
+  - [CAPITULO II: MARCO CONCEPTUAL O REFERENCIAL](#capitulo-ii-marco-conceptual-o-referencial)
+    - [**TEMA 1**](#tema-1)
+    - [**TEMA 2**](#tema-2)
+    - [**TEMA 3**](#tema-3)
+    - [**TEMA 4**](#tema-4)
+  - [CAPÍTULO III: METODOLOGÍA SEGUIDA](#capítulo-iii-metodología-seguida)
+    - [**a) Cómo se realizó el Trabajo Práctico**](#a-cómo-se-realizó-el-trabajo-práctico)
+    - [**b) Herramientas (Instrumentos y procedimientos)**](#b-herramientas-instrumentos-y-procedimientos)
+  - [CAPÍTULO IV: DESARROLLO DEL TEMA / PRESENTACIÓN DE RESULTADOS](#capítulo-iv-desarrollo-del-tema--presentación-de-resultados)
+    - [Diagrama relacional](#diagrama-relacional)
+    - [Diccionario de datos](#diccionario-de-datos)
+    - [Desarrollo TEMA 1](#desarrollo-tema-1)
+    - [Desarrollo TEMA 2](#desarrollo-tema-2)
+    - [Desarrollo TEMA 3](#desarrollo-tema-3)
+    - [Desarrollo TEMA 4](#desarrollo-tema-4)
+  - [CAPÍTULO V: CONCLUSIONES](#capítulo-v-conclusiones)
+  - [BIBLIOGRAFÍA DE CONSULTA](#bibliografía-de-consulta)
+    - [Tema 1](#tema-1-1)
+    - [Tema 2](#tema-2-1)
+    - [Tema 3](#tema-3-1)
+    - [Tema 4](#tema-4-1)
 
 
 ## CAPÍTULO I: INTRODUCCIÓN
@@ -90,28 +100,32 @@ El cine tiene dificultades para organizar sus operaciones debido a que mucha de 
 ## CAPITULO II: MARCO CONCEPTUAL O REFERENCIAL
 
 ### **TEMA 1** 
-Ut sed imperdiet risus. Maecenas vestibulum arcu vitae orci pretium pharetra. Suspendisse potenti. Fusce massa libero, fermentum eget elit in, tincidunt fermentum nunc. Cras imperdiet nisl elit, elementum gravida enim accumsan vel. Sed in sapien quis ante consectetur commodo id non nulla. Aenean lacinia, dolor convallis semper mattis, ante orci elementum nunc, eget feugiat risus neque in urna. Ut ut quam nec risus mollis convallis ornare ac odio. Phasellus efficitur posuere nibh, eget tempor augue pellentesque ac. Ut enim sem, imperdiet non est ut, blandit posuere dui. Curabitur at purus orci. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
 
 ### **TEMA 2** 
-Ut sed imperdiet risus. Maecenas vestibulum arcu vitae orci pretium pharetra. Suspendisse potenti. Fusce massa libero, fermentum eget elit in, tincidunt fermentum nunc. Cras imperdiet nisl elit, elementum gravida enim accumsan vel. Sed in sapien quis ante consectetur commodo id non nulla. Aenean lacinia, dolor convallis semper mattis, ante orci elementum nunc, eget feugiat risus neque in urna. Ut ut quam nec risus mollis convallis ornare ac odio. Phasellus efficitur posuere nibh, eget tempor augue pellentesque ac. Ut enim sem, imperdiet non est ut, blandit posuere dui. Curabitur at purus orci. Interdum et malesuada fames ac ante ipsum primis in faucibus.
 
-...
+### **TEMA 3**
+
+### **TEMA 4**
 
 ## CAPÍTULO III: METODOLOGÍA SEGUIDA 
 
-Donec lobortis tincidunt erat, non egestas mi volutpat in. Cras ante purus, luctus sed fringilla non, ullamcorper at eros.
-
 ### **a) Cómo se realizó el Trabajo Práctico**
-Vestibulum rutrum feugiat molestie. Nunc id varius augue. Ut augue mauris, venenatis et lacus ut, mattis blandit urna. Fusce lobortis, quam non vehicula scelerisque, nisi enim ultrices diam, ac tristique libero ex nec orci.
+Principalmente, indagamos y realizamos investigaciones en internet sobre los temas dados a desarrollar. Buscamos en páginas oficiales como Microsoft Learn, la cuál posee información precisa y consisa sobre los temas de SQL Server y su sintáxis. 
+Luego nos dividimos los temas, realizamos un Google Docs para guardar la información recolectada de manera que sea más fácil luego pasarla al proyecto en el repositorio GitHub.
+Al terminar la parte teórica, comenzamos con el desarrollo de los scripts en el SQL Server Management Studio (SSMS).
 
 ### **b) Herramientas (Instrumentos y procedimientos)**
-Donec lobortis tincidunt erat, non egestas mi volutpat in. Cras ante purus, luctus sed fringilla non, ullamcorper at eros. Integer interdum id orci id rutrum. Curabitur facilisis lorem sed metus interdum accumsan. 
+ - GitHub
+ - VSCode 
+ - Google Docs 
+ - Microsoft Learn
+ - ChatGPT
+ - Copilot
+ - SQL Server Management Studio (SSMS)
+ 
 
 
 ## CAPÍTULO IV: DESARROLLO DEL TEMA / PRESENTACIÓN DE RESULTADOS 
-
-Maecenas molestie lacus tincidunt, placerat dolor et, ullamcorper erat. Mauris tortor nisl, ultricies ac scelerisque nec, feugiat in nibh. Pellentesque interdum aliquam magna sit amet rutrum. 
 
 ### Diagrama relacional
 ![diagrama_relacional](/doc/image_relational.png)
@@ -123,17 +137,21 @@ Acceso al documento [PDF](doc/diccionario_datos.pdf) del diccionario de datos.
 
 ### Desarrollo TEMA 1
 
-Fusce auctor finibus lectus, in aliquam orci fermentum id. Fusce sagittis lacus ante, et sodales eros porta interdum. Donec sed lacus et eros condimentum posuere. 
-
-> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_1](script/tema01_nombre_tema)
+> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_1](script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd)
 
 ### Desarrollo TEMA 2
 
-Proin aliquet mauris id ex venenatis, eget fermentum lectus malesuada. Maecenas a purus arcu. Etiam pellentesque tempor dictum. 
+> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_2](script/tema02_nombre_tema)
+
+
+### Desarrollo TEMA 3
 
 > Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_2](script/tema02_nombre_tema)
 
-... 
+
+### Desarrollo TEMA 4
+
+> Acceder a la siguiente carpeta para la descripción completa del tema [scripts-> tema_2](script/tema02_nombre_tema)
 
 
 ## CAPÍTULO V: CONCLUSIONES
@@ -144,9 +162,24 @@ Nunc sollicitudin purus quis ante sodales luctus. Proin a scelerisque libero, vi
 
 ## BIBLIOGRAFÍA DE CONSULTA
 
- 1. List item
- 2. List item
- 3. List item
- 4. List item
- 5. List item
+### Tema 1
+
+  1. VanMSFT. (n.d.). Introducción a los permisos de motor de base de datos - SQL Server. Microsoft Learn. https://learn.microsoft.com/es-es/sql/relational-databases/security/authentication-access/getting-started-with-database-engine-permissions?view=sql-server-ver16 
+  2. VanMSFT. (n.d.). CREATE USER (Transact-SQL) - SQL Server. Microsoft Learn. https://learn.microsoft.com/es-es/sql/t-sql/statements/create-user-transact-sql?view=sql-server-ver16
+  3. VanMSFT. (n.d.). CREATE ROLE (Transact-SQL) - SQL Server. Microsoft Learn. https://learn.microsoft.com/es-es/sql/t-sql/statements/create-role-transact-sql?view=sql-server-ver16
+  4. VanMSFT. (n.d.). Entidades de seguridad (motor de base de datos) - SQL Server. Microsoft Learn. https://learn.microsoft.com/es-es/sql/relational-databases/security/authentication-access/principals-database-engine?view=sql-server-ver16
+  5. VanMSFT. (n.d.). Permisos (motor de base de datos) - SQL Server. Microsoft Learn. https://learn.microsoft.com/es-es/sql/relational-databases/security/permissions-database-engine?view=sql-server-ver16
+
+### Tema 2 
+  1. 
+  2. 
+  3. 
+### Tema 3
+  1. 
+  2. 
+  3. 
+### Tema 4 
+  1. 
+  2. 
+  3. 
 
