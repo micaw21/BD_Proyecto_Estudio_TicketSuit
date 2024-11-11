@@ -167,8 +167,6 @@ Acceso al documento [PDF](doc/diccionario_datos.pdf) del diccionario de datos.
 
 Nunc sollicitudin purus quis ante sodales luctus. Proin a scelerisque libero, vitae pharetra lacus. Nunc finibus, tellus et dictum semper, nisi sem accumsan ligula, et euismod quam ex a tellus. 
 
-
-
 ## BIBLIOGRAFÍA DE CONSULTA
 
 ### Tema 1
@@ -188,7 +186,7 @@ Nunc sollicitudin purus quis ante sodales luctus. Proin a scelerisque libero, vi
   2. 
   3. 
 ### Tema 4 
-  1. 
-  2. 
+  1. WilliamDAssafMSFT. (n.d.). Almacenar documentos JSON - SQL Server. Microsoft Learn. https://learn.microsoft.com/es-es/sql/relational-databases/json/store-json-documents-in-sql-tables?view=sql-server-ver16 
+  2. Márquez, E. (2024, May 4). SQL Server y la gestión de datos JSON: técnicas y consejos. Medium. https://medium.com/@edgarjmarquez/sql-server-y-la-gesti%C3%B3n-de-datos-json-t%C3%A9cnicas-y-consejos-9907e49285aa 
   3. 
 

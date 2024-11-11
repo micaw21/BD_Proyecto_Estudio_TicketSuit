@@ -30,7 +30,13 @@ Tareas:
 
 ## Permisos a nivel de usuarios:
 - Crear dos usuarios de base de datos.
+
+
+![creacion_usuarios_permisos_usuarios](/script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd/tema01_img/creacion_usuarios_permisos_usuarios.png) 
+
+
 - A un usuario darle el permiso de administrador y al otro usuario solo permiso de lectura.
+
 - Utilizar los procedimientos almacenados creados anteriormente.
 - Al usuario con permiso de solo lectura, darle permiso de ejecución sobre este procedimiento. 
 - Realizar INSERT con sentencia SQL sobre la tabla del procedimiento con ambos usuarios.
