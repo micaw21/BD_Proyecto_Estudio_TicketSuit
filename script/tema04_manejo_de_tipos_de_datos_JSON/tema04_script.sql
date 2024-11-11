@@ -41,6 +41,7 @@ SET detalles = JSON_MODIFY(detalles, '$.superficie_urbana', NULL)
 WHERE nombre = 'Chaco';
 
 -- Realizar operaciones de consultas.
+
 SELECT * FROM Ciudad
 
 SELECT nombre, JSON_VALUE(detalles, '$.clima') AS clima --Consulta el clima dentro de detalles
@@ -54,6 +55,18 @@ SELECT nombre,
     JSON_VALUE(detalles, '$.clima') AS clima,
     JSON_VALUE(detalles, '$.poblacion') AS poblacion
 FROM Ciudad;
+
+
+--Optimización por indexación
+ALTER TABLE Ciudad
+ADD poblacion_calculada AS JSON_VALUE(detalles, '$.poblacion');
+
+CREATE INDEX idx_poblacion ON Ciudad (poblacion_calculada);
+
+SELECT id_ciudad, nombre, detalles
+FROM Ciudad
+WHERE JSON_VALUE(detalles, '$.poblacion') > 400000;
+
 
 
 

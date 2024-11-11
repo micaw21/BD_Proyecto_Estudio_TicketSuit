@@ -188,5 +188,4 @@ Nunc sollicitudin purus quis ante sodales luctus. Proin a scelerisque libero, vi
 ### Tema 4 
   1. WilliamDAssafMSFT. (n.d.). Almacenar documentos JSON - SQL Server. Microsoft Learn. https://learn.microsoft.com/es-es/sql/relational-databases/json/store-json-documents-in-sql-tables?view=sql-server-ver16 
   2. Márquez, E. (2024, May 4). SQL Server y la gestión de datos JSON: técnicas y consejos. Medium. https://medium.com/@edgarjmarquez/sql-server-y-la-gesti%C3%B3n-de-datos-json-t%C3%A9cnicas-y-consejos-9907e49285aa 
-  3. 
 
