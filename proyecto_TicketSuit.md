@@ -178,9 +178,8 @@ Nunc sollicitudin purus quis ante sodales luctus. Proin a scelerisque libero, vi
   5. VanMSFT. (n.d.). Permisos (motor de base de datos) - SQL Server. Microsoft Learn. https://learn.microsoft.com/es-es/sql/relational-databases/security/permissions-database-engine?view=sql-server-ver16
 
 ### Tema 2 
-  1. 
-  2. 
-  3. 
+  1. Procedimientos almacenados: optimización de la gestión de bases de datos. https://www.in-com.com/es/blog/stored-procedures-optimizing-database-management/
+  2. Procedimientos almacenados (motor de base de datos) | SQL Server. https://learn.microsoft.com/es-es/sql/relational-databases/stored-procedures/stored-procedures-database-engine?view=sql-server-ver16
 ### Tema 3
   1. 
   2. 
