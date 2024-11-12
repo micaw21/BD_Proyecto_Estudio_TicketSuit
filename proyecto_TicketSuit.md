@@ -123,7 +123,7 @@ El cine tiene dificultades para organizar sus operaciones debido a que mucha de 
 ### **a) Cómo se realizó el Trabajo Práctico**
 Principalmente, indagamos y realizamos investigaciones en internet sobre los temas dados a desarrollar. Buscamos en páginas oficiales como Microsoft Learn, la cuál posee información precisa y consisa sobre los temas de SQL Server y su sintáxis. 
 Luego nos dividimos los temas, realizamos un Google Docs para guardar la información recolectada de manera que sea más fácil luego pasarla al proyecto en el repositorio GitHub.
-Al terminar la parte teórica, comenzamos con el desarrollo de los scripts en el SQL Server Management Studio (SSMS).
+Al terminar la parte teórica, comenzamos con el desarrollo de los scripts en el SQL Server Management Studio (SSMS), agregando o eliminando registros en caso de que sea necesario, comparando resultados, identificando errores y corrigiéndolos, etc. 
 
 ### **b) Herramientas (Instrumentos y procedimientos)**
  - GitHub
@@ -165,7 +165,12 @@ Acceso al documento [PDF](doc/diccionario_datos.pdf) del diccionario de datos.
 
 ## CAPÍTULO V: CONCLUSIONES
 
-Nunc sollicitudin purus quis ante sodales luctus. Proin a scelerisque libero, vitae pharetra lacus. Nunc finibus, tellus et dictum semper, nisi sem accumsan ligula, et euismod quam ex a tellus. 
+**Manejo de Permisos a Nivel de Usuario de Bases de Datos**: Se concluye que es un aspecto fundamental para la seguridad y administración del sistema, restringiendo así el acceso a las distintas personas que tengan contacto con nuestro sistema, otorgando un control preciso sobre quién puede acceder y manipular datos específicos. Esto mejora la seguridad y garantiza que solo los usuarios autorizados puedan realizar ciertas operaciones, evitando así corromper la integridad y seguridad del sistema y de los datos incluidos en el.
+La asignación de roles simplifica la administración del acceso, ya que los permisos se pueden asignar a roles y estos roles a usuarios, en lugar de asignar permisos individuales a cada usuario, lo cual resulta práctico para nuestro proyecto.
+
+**Uso de JSON**: Esta claro que ofrece una forma eficiente y flexible de manejar datos no estructurados. Su uso es conveniente cuando la estructura de los datos es variable, pero siempre teniendo en cuenta que genera una sobrecarga al ejecutar consultas, resultando en un impacto negativo al rendimiento de nuestro sistema, además puede hacer que las instrucciones SQL sean más difíciles de leer y mantener, especialmente en bases de datos grandes con múltiples operaciones complejas.
+
+
 
 ## BIBLIOGRAFÍA DE CONSULTA
 
