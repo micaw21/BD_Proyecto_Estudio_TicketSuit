@@ -62,5 +62,5 @@ Este documento presenta un análisis comparativo de los tiempos de ejecución y 
 3. **Índice no agrupado con columnas incluidas:** Aunque incluye columnas adicionales en el índice, es menos eficiente para consultas como esta, debido a un mayor número de lecturas lógicas (4951).
 4. **Índice combinado:** Al combinar ambos índices, el motor opta por el índice agrupado, indicando que un solo índice agrupado por `fecha` es suficiente para optimizar esta consulta.
 
-** Especificaciones del equipo utilizado para las Pruebas: ** CPU: Ryzen 5 3600x, RAM: 16gb 3200Mhz, Toshiba 1TB Disk
-** Especificaciones del programa: ** SSMS 2022
+- **Especificaciones del equipo utilizado para las Pruebas:** CPU: Ryzen 5 3600x, RAM: 16gb 3200Mhz, Toshiba 1TB Disk.
+- **Especificaciones del programa:** SSMS 2022.
