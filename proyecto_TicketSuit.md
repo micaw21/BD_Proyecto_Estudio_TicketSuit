@@ -186,9 +186,8 @@ La asignación de roles simplifica la administración del acceso, ya que los per
   1. Procedimientos almacenados: optimización de la gestión de bases de datos. https://www.in-com.com/es/blog/stored-procedures-optimizing-database-management/
   2. Procedimientos almacenados (motor de base de datos) | SQL Server. https://learn.microsoft.com/es-es/sql/relational-databases/stored-procedures/stored-procedures-database-engine?view=sql-server-ver16
 ### Tema 3
-  1. 
-  2. 
-  3. 
+  1. Microsoft Docs: Índices en SQL Server. https://learn.microsoft.com/es-es/sql/relational-databases/sql-server-index-design-guide
+  2. Teoría y práctica de índices en bases de datos relacionales.https://www.sqlshack.com/sql-server-indexes-overview/
 ### Tema 4 
   1. WilliamDAssafMSFT. (n.d.). Almacenar documentos JSON - SQL Server. Microsoft Learn. https://learn.microsoft.com/es-es/sql/relational-databases/json/store-json-documents-in-sql-tables?view=sql-server-ver16 
   2. Márquez, E. (2024, May 4). SQL Server y la gestión de datos JSON: técnicas y consejos. Medium. https://medium.com/@edgarjmarquez/sql-server-y-la-gesti%C3%B3n-de-datos-json-t%C3%A9cnicas-y-consejos-9907e49285aa 
