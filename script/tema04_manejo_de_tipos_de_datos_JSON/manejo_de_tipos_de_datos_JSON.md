@@ -29,18 +29,14 @@ Una de las principales ventajas de utilizar JSON en bases de datos relacionales 
 
 #### Optimización del rendimiento al trabajar con datos JSON:
 
-Para optimizar el rendimiento al trabajar con datos JSON, es importante considerar algunos aspectos clave. Esto incluye indexación adecuada en columnas JSON mediante índices filtrados, que permiten acelerar la recuperación de datos específicos dentro de objetos o matrices JSON.
-
-Además, debemos evitar consultas y operaciones costosas en datos JSON. Es importante evaluar el impacto de las consultas de navegación y filtrado complejas, y crear consultas eficientes utilizando las herramientas y funciones adecuadas proporcionadas por SQL Server.
-
-Supongamos la tabla Ciudad posee 1 millón de registros, y solo queremos encontrar las ciudades donde la población (dentro del JSON en detalles) es mayor a 400,000. Sin un índice, SQL Server tendría que leer cada fila, extraer el valor de poblacion desde el JSON y verificar la condición en cada caso. Esto sería lento. 
-Con un índice en poblacion_calculada, SQL Server hace lo siguiente:
-Utiliza el índice para localizar las filas que cumplen con poblacion_calculada > 400000 sin tener que leer cada fila de la tabla, y, una vez localizadas, SQL Server accede directamente a las filas y obtiene sus datos.
-Esto mejora el rendimiento de la consulta porque el índice permite localizar rápidamente los valores deseados sin revisar todos los registros, lo cual es especialmente útil para tablas grandes.
+Pude observar que las consultas que manejan datos en formato JSON tienden a tener una ligera sobrecarga de tiempo en comparación con las que no usan JSON, como se puede observar en la imagen. 
 
 ![optimizacion_JSON](/script/tema04_manejo_de_tipos_de_datos_JSON/tema04_img/optimizacion_JSON.png) 
 
+No presentan diferencia cuando se realizan consultas simples, pero al utilizar JOIN en las consultas y además teniendo muchos registros en las tablas, se observa el tiempo extra que tarda
+la tabla con JSON en ejecutar dicha consulta, a diferencia de la tabla que no posee JSON.
+
 - Expresar sus conclusiones.
 
-Como conclusión podemos afirmar que está claro que el manejo de datos JSON en SQL Server es una herramienta poderosa que permite un fácil manejo de datos no estructurados o semi estructurados, pero no son tan eficientes como los datos estructurados.
-La indexación a través de columnas calculadas no es tan eficiente como los índices convencionales, especialmente en tablas con muchos registros. Además, si el campo JSON tiene una gran cantidad de campos internos, resulta poco práctico crear índices para cada uno.
+Como conclusión podemos afirmar que está claro que el manejo de datos JSON en SQL Server es una herramienta poderosa que permite un fácil manejo de datos no estructurados o semi estructurados, pero no son tan eficientes como los datos estructurados, al menos no para una base de datos con muchas tablas que poseen muchos registros ni para realizar consultas complejas, ya que se observa la sobrecarga de tiempo en la ejecución.
+
