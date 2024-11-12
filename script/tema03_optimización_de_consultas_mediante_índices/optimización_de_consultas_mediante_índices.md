@@ -43,7 +43,7 @@ Este documento presenta un análisis comparativo de los tiempos de ejecución y 
 
 ---
 
-### 4) **Índice agrupado por `fecha` + Índice no agrupado (con columnas incluidas)**
+### EXTRA) **Índice agrupado por `fecha` + Índice no agrupado (con columnas incluidas)**
 
 - **Lecturas lógicas:** 2876 (idéntico al índice agrupado por fecha)
 - **Tiempo de CPU:** 203 ms
