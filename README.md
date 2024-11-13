@@ -21,5 +21,5 @@ Este repositorio propone exponer la información para presentar el desarrollo de
 	---->tema_04_manejo_de_tipos_de_datos_JSON
  		  tema04_script.sql
 		  manejo_de_tipos_de_datos_JSON.md (descripción completa del procedimiento para implementar el tema técnico de estudio)
-     		  ----> tema01_img (sub-carpeta especifica para imagenes utilizadas en el desarrollo)
+     		  ----> tema04_img (sub-carpeta especifica para imagenes utilizadas en el desarrollo)
     ->proyecto_TicketSuit.md (documento principal estructurado por capítulos)
