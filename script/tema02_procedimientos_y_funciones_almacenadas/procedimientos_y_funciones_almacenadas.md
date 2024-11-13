@@ -34,3 +34,8 @@ Realizar  update y delete sobre  algunos de los registros insertados  en esas ta
 Desarrollar al menos tres funciones almacenadas. Por ej: calcular la edad, 
 
 Comparar la eficiencia de las operaciones directas versus el uso de procedimientos y funciones
+
+# Conclusión
+Los procedimientos y funciones en SQL resultan útiles para modularizar y optimizar tareas, reduce el código repetido, mejora la legibilidad y facilita el mantenimiento del codigo y la base de datos. Con esto no solo minimizamos las llamadas necesarias, también garantizamos una mayor consistencia en las transacciones.
+
+Aunque las consultas directas pueden ser prácticas y rápidas para tareas puntuales, los procedimientos y funciones almacenadas son una buena practica en aplicaciones de alta carga o donde la eficiencia, el control del estado y uso de los datos, y la modularidad sean prioridad.
