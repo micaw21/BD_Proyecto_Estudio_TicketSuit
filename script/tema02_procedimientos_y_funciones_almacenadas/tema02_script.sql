@@ -35,6 +35,7 @@ CREATE PROCEDURE InsertarSala
 	VALUES (@id_sala, @nombre, @capacidad, @id_cine, @estado);
 END;
 
+DROP PROCEDURE InsertarAsientos
 CREATE PROCEDURE InsertarAsientos
 (
 	@id_sala INT,
@@ -65,8 +66,10 @@ CREATE PROCEDURE InsertarAsientos
         SET @i = 1;
         SET @j = @j + 1;
     END
-	UPDATE Sala SET capacidad = @cantidad_columnas * @cantidad_columnas;
+	UPDATE Sala SET capacidad = @cantidad_columnas * @cantidad_columnas WHERE id_sala = @id_sala;
 END;
+
+SELECT * FROM Sala 
 
 ---|------------------------------------|---
 ---|------------ UPDATES ---------------|---
@@ -198,3 +201,47 @@ CREATE FUNCTION AsientoDisponible(
 
 		RETURN @disponible;
 END;
+
+-- Comparar la eficiencia de las operaciones directas versus el uso de procedimientos y funciones
+
+-- Tiempo de ejecución de una consulta directa
+DECLARE @StartTime DATETIME = GETDATE();
+
+INSERT INTO Sala (id_sala, nombre, capacidad, id_cine, estado) VALUES
+(6, 'Sala 6', 10, 1, 1)
+INSERT INTO Asiento (id_asiento, letra_fila, numero_columna, id_sala) VALUES
+(1, 'A', 1, 6)
+INSERT INTO Asiento (id_asiento, letra_fila, numero_columna, id_sala) VALUES
+(2, 'A', 2, 6)
+INSERT INTO Asiento (id_asiento, letra_fila, numero_columna, id_sala) VALUES
+(3, 'A', 3, 6)
+INSERT INTO Asiento (id_asiento, letra_fila, numero_columna, id_sala) VALUES
+(4, 'A', 4, 6)
+INSERT INTO Asiento (id_asiento, letra_fila, numero_columna, id_sala) VALUES
+(5, 'A', 5, 6)
+INSERT INTO Asiento (id_asiento, letra_fila, numero_columna, id_sala) VALUES
+(6, 'B', 1, 6)
+INSERT INTO Asiento (id_asiento, letra_fila, numero_columna, id_sala) VALUES
+(7, 'B', 2, 6)
+INSERT INTO Asiento (id_asiento, letra_fila, numero_columna, id_sala) VALUES
+(8, 'B', 3, 6)
+INSERT INTO Asiento (id_asiento, letra_fila, numero_columna, id_sala) VALUES
+(9, 'B', 4, 6)
+INSERT INTO Asiento (id_asiento, letra_fila, numero_columna, id_sala) VALUES
+(10, 'B', 5, 6)
+
+DECLARE @EndTime DATETIME = GETDATE();
+PRINT 'Consulta directa duración: ' + CONVERT(VARCHAR(20), DATEDIFF(MILLISECOND, @StartTime, @EndTime)) + ' ms';
+
+-- Tiempo de ejecución de un procedimiento almacenado
+SET @StartTime = GETDATE();
+
+EXEC InsertarSala 7, 'Sala 7', 10, 1;
+EXEC InsertarAsientos 7, 2, 5;
+
+SET @EndTime = GETDATE();
+PRINT 'Procedimiento almacenado duración: ' + CONVERT(VARCHAR(20), DATEDIFF(MILLISECOND, @StartTime, @EndTime)) + ' ms';
+
+
+EXEC EliminarSalaYAsientos 6;
+EXEC EliminarSalaYAsientos 7;
