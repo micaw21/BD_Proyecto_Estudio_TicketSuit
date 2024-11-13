@@ -241,9 +241,6 @@ INSERT INTO Sala (id_sala, nombre, capacidad, id_cine, estado) VALUES
 (34, 'Sala 34', 120, 21, 1);
 
 
-
-
-
 -- CONSULTA SIMPLE
 SET STATISTICS TIME ON;
 SET STATISTICS IO ON;

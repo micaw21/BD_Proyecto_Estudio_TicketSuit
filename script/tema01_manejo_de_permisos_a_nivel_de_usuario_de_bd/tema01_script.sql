@@ -8,8 +8,51 @@ USE TicketSuit;
 CREATE USER UsuarioAdm FOR LOGIN UsuarioAdmin;
 CREATE USER UsuarioLect FOR LOGIN UsuarioLectura; 
 
-ALTER ROLE db_owner ADD MEMBER UsuarioAdmin;
+ALTER ROLE db_owner ADD MEMBER UsuarioAdm;
 ALTER ROLE db_datareader ADD MEMBER UsuarioLect;
+
+-- Verificacion de que se hayan a�adido los usuarios a los roles
+SELECT 
+    dp.name AS Usuario,
+    dp.type_desc AS Tipo,
+    rol.name AS Rol
+FROM 
+    sys.database_principals AS dp
+INNER JOIN 
+    sys.database_role_members AS drm
+    ON dp.principal_id = drm.member_principal_id
+INNER JOIN 
+    sys.database_principals AS rol
+    ON rol.principal_id = drm.role_principal_id
+WHERE 
+    dp.name = 'UsuarioAdm' OR dp.name = 'UsuarioLect'
+
+-- Utilizar los procedimientos almacenados creados anteriormente.
+
+CREATE PROCEDURE InsertarCine
+(
+    @id_cine INT,
+    @nombre VARCHAR(200),
+    @direccion VARCHAR(200)
+) AS BEGIN
+    INSERT INTO Cine (id_cine, nombre, direccion)
+    VALUES (@id_cine, @nombre, @direccion);
+END;
+
+-- Al usuario con permiso de solo lectura, darle permiso de ejecuci�n sobre este procedimiento.
+
+GRANT EXECUTE ON OBJECT::InsertarCine TO UsuarioLect;
+
+-- Realizar INSERT con sentencia SQL sobre la tabla del procedimiento con ambos usuarios.
+
+INSERT INTO Cine (id_cine, nombre, direccion) VALUES (101, 'Cines Av. Armenia', 'Av. Armenia 1032');
+
+
+-- Realizar un INSERT a trav�s del procedimiento almacenado con el usuario con permiso de solo lectura
+
+EXEC InsertarCine 102, Cineapolis, 'Cordoba 1520';
+
+
 
 ---- PERMISOS A NIVEL DE ROLES DEL DBMS
 -- Crear dos usuarios de base de datos.

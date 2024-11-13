@@ -31,16 +31,40 @@ Tareas:
 ## Permisos a nivel de usuarios:
 - Crear dos usuarios de base de datos.
 
-
 ![creacion_usuarios_permisos_usuarios](/script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd/tema01_img/creacion_usuarios_permisos_usuarios.png) 
-
 
 - A un usuario darle el permiso de administrador y al otro usuario solo permiso de lectura.
 
-- Utilizar los procedimientos almacenados creados anteriormente.
+![permisos_given](/script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd/tema01_img/permisos_given.png) 
+
+
+- Utilizar los procedimientos almacenados creados anteriormente
+
+Utilizamos el procedimiento de insertar datos en la tabla Cine.
+
+![proc_cine](/script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd/tema01_img/proc_cine.png) 
+
+
 - Al usuario con permiso de solo lectura, darle permiso de ejecución sobre este procedimiento. 
+
+
 - Realizar INSERT con sentencia SQL sobre la tabla del procedimiento con ambos usuarios.
+
+Como se puede observar, no me permite realizar el insert con el usuario que tiene permiso de lectura. Esto es debido a que dicho usuario no tiene acceso a escritura en la tabla.
+
+![insert_lect](/script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd/tema01_img/insert_lect.png) 
+
+En cambio, con el usuario cuyo permiso es de administrador, sí puedo realizar el insert.
+
+![insert_admin](/script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd/tema01_img/insert_admin.png) 
+
+
 - Realizar un INSERT a través del procedimiento almacenado con el usuario con permiso de solo lectura
+
+Como el usuario posee permiso para ejecutar el procedimiento, puedo realizar el insert a través de él. 
+
+![insert_por_procedimiento_lect](/script/tema01_manejo_de_permisos_a_nivel_de_usuario_de_bd/tema01_img/insert_por_procedimiento_lect.png) 
+
 
 ## Permisos a nivel de roles del DBMS:
 - Crear dos usuarios de base de datos.
